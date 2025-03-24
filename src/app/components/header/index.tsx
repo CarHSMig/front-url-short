@@ -9,31 +9,31 @@ export default function Header() {
 
   return(
     <header>
-      <HeaderButton
+      <nav className="header">
+        <HeaderButton
         element="123"
         label="Encurtador"
-      />
-      <HeaderButton
+        />
+        <HeaderButton
         element="123"
         label="Desencurtador"
-      />
-      <nav className="header">
+        />
         <Link href="/" className="logo">
-          <Image src="/logo.jpg" 
-                alt="logo" 
-                width={200}
-                height={50}
+          <Image src="/logo.png" 
+                 alt="logo" 
+                 width={200}
+                 height={50}
           />
         </Link>
-      </nav>
-      <HeaderButton
+        <HeaderButton
         element="123"
         label="Sobre"
-      />
-      <HeaderButton
+        />
+        <HeaderButton
         element="123"
         label="Contatos"
-      />
+        />
+      </nav>
     </header>
   );
 } 
